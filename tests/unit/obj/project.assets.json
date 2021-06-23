@@ -56,6 +56,18 @@
           "lib/net5.0/EntityFrameworkCoreMock.Shared.dll": {}
         }
       },
+      "FakeItEasy/7.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "4.3.1"
+        },
+        "compile": {
+          "lib/net5.0/FakeItEasy.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FakeItEasy.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2290,6 +2302,26 @@
         "entityframeworkcoremock.shared.nuspec",
         "lib/net5.0/EntityFrameworkCoreMock.Shared.dll",
         "lib/netstandard2.1/EntityFrameworkCoreMock.Shared.dll"
+      ]
+    },
+    "FakeItEasy/7.1.0": {
+      "sha512": "xn2KC8v1mNpYtN0qiEIuvWnFY7MPzx3INf//+BvJ+banzVSpyGdc58cuQMLOQjNlALHNDTcnuOuJrGtOcN1Gwg==",
+      "type": "package",
+      "path": "fakeiteasy/7.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fakeiteasy.7.1.0.nupkg.sha512",
+        "fakeiteasy.nuspec",
+        "images/FakeItEasy.png",
+        "lib/net45/FakeItEasy.dll",
+        "lib/net45/FakeItEasy.xml",
+        "lib/net5.0/FakeItEasy.dll",
+        "lib/net5.0/FakeItEasy.xml",
+        "lib/netstandard2.0/FakeItEasy.dll",
+        "lib/netstandard2.0/FakeItEasy.xml",
+        "lib/netstandard2.1/FakeItEasy.dll",
+        "lib/netstandard2.1/FakeItEasy.xml"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
@@ -7286,6 +7318,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "EntityFrameworkCoreMock.Moq >= 2.2.0",
+      "FakeItEasy >= 7.1.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.1",
       "app >= 1.0.0",
@@ -7338,6 +7371,10 @@
           "EntityFrameworkCoreMock.Moq": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "FakeItEasy": {
+            "target": "Package",
+            "version": "[7.1.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

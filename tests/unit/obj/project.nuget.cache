@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3yMkOgUjmgGvh96WmmOK3a//2frwgUDuLZesr5ipeyYPVHQbM+0HCdEs+UI12i3Y7fVAmUD1Lkqrgfs1l2s/dw==",
+  "dgSpecHash": "4ondT55cnvjEjQDcCDPP6h3Nl6XoOhhB+JDo0PzuK2qGTno3COrMTYJNZyEcFIo1vmespOWc4TZlLYa5yMsc0g==",
   "success": true,
   "projectFilePath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/mikolajsemeniuk/.nuget/packages/coverlet.collector/1.3.0/coverlet.collector.1.3.0.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/entityframeworkcoremock.moq/2.2.0/entityframeworkcoremock.moq.2.2.0.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/entityframeworkcoremock.shared/2.2.0/entityframeworkcoremock.shared.2.2.0.nupkg.sha512",
+    "/Users/mikolajsemeniuk/.nuget/packages/fakeiteasy/7.1.0/fakeiteasy.7.1.0.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.0/microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/5.0.0/microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.codecoverage/16.7.1/microsoft.codecoverage.16.7.1.nupkg.sha512",

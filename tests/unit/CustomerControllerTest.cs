@@ -11,12 +11,12 @@ using Xunit;
 
 namespace unit
 {
-    public class CustomerRepositoryTest
+    public class CustomerControllerTest
     {
         private readonly Mock<ICustomerRepository> _repository;
         private readonly CustomerController _controller;
 
-        public CustomerRepositoryTest()
+        public CustomerControllerTest()
         {
             _repository = new Mock<ICustomerRepository>(MockBehavior.Strict);
             _controller = new CustomerController(_repository.Object);

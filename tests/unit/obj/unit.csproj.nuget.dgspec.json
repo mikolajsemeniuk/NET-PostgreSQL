@@ -131,6 +131,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
