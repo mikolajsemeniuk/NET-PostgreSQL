@@ -4,14 +4,14 @@
     "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj": {}
   },
   "projects": {
-    "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj": {
+    "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
-        "projectName": "unit",
-        "projectPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
+        "projectUniqueName": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/app.csproj",
+        "projectName": "app",
+        "projectPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/app.csproj",
         "packagesPath": "/Users/mikolajsemeniuk/.nuget/packages/",
-        "outputPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/obj/",
+        "outputPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mikolajsemeniuk/.nuget/NuGet/NuGet.Config"
@@ -38,9 +38,106 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
+        "projectName": "unit",
+        "projectPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
+        "packagesPath": "/Users/mikolajsemeniuk/.nuget/packages/",
+        "outputPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mikolajsemeniuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/app.csproj": {
+                "projectPath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/source/app/app.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFrameworkCoreMock.Moq": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

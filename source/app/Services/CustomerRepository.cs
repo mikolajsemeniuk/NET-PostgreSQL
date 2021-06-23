@@ -51,6 +51,12 @@ namespace app.Services
             };
         }
 
+        /// <summary>
+        /// Adds two numbers and returns the result
+        /// </summary>
+        /// <param name="first">first number to add</param>
+        /// <param name="second">second number to </param>
+        /// <returns>Integer</returns>
         public async Task<CustomerPayload> GetCustomerAsync(int id)
         {
             var customer = await _context.Customers.FindAsync(id);

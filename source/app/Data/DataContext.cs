@@ -8,6 +8,6 @@ namespace app.Data
         public DataContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
     }
 }
