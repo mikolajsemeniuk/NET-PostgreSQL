@@ -1,3 +1,4 @@
+using app.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace app.Data
@@ -7,5 +8,6 @@ namespace app.Data
         public DataContext(DbContextOptions options) : base(options)
         {
         }
+        public DbSet<Customer> Customers { get; set; }
     }
 }
