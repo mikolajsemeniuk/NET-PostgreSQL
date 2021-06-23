@@ -25,13 +25,13 @@ namespace app.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<IEnumerable<CustomerPayload>>> GetCustomerAsync(int id) =>
+        public async Task<ActionResult<CustomerPayload>> GetCustomerAsync(int id) =>
             Ok(await _repository.GetCustomerAsync(id));
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<IEnumerable<CustomerPayload>>> AddCustomerAsync(CustomerInput input) =>
+        public async Task<ActionResult<CustomerPayload>> AddCustomerAsync(CustomerInput input) =>
             Ok(await _repository.AddCustomerAsync(input));
 
         [HttpPut("{id}")]
