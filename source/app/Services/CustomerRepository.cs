@@ -28,6 +28,27 @@ namespace app.Services
                 })
                 .ToListAsync();
 
+        /// <summary>
+        /// Returns CustomerPayload object or InvalidExceptionArgument
+        /// </summary>
+        /// <param name="id">[Required] Integer id</param>
+        /// <returns>Integer</returns>
+        public async Task<CustomerPayload> GetCustomerAsync(int id)
+        {
+            var customer = await _context.Customers.FindAsync(id);
+            
+            if (customer == null)
+                throw new Exception("something gone wrong please try again later");
+            
+            return new CustomerPayload
+            {
+                Id = customer.CustomerId,
+                Name = customer.Name,
+                FullName = customer.FullName,
+                BirthDate = customer.BirthDate
+            };
+        }
+
         public async Task<CustomerPayload> AddCustomerAsync(CustomerInput input)
         {
             var customer = new Customer
@@ -42,26 +63,6 @@ namespace app.Services
             if (await _context.SaveChangesAsync() < 1)
                 throw new Exception("something gone wrong please try again later");
 
-            return new CustomerPayload
-            {
-                Id = customer.CustomerId,
-                Name = customer.Name,
-                FullName = customer.FullName,
-                BirthDate = customer.BirthDate
-            };
-        }
-
-        /// <summary>
-        /// Adds two numbers and returns the result
-        /// </summary>
-        /// <param name="first">first number to add</param>
-        /// <param name="second">second number to </param>
-        /// <returns>Integer</returns>
-        public async Task<CustomerPayload> GetCustomerAsync(int id)
-        {
-            var customer = await _context.Customers.FindAsync(id);
-            if (customer == null)
-                throw new Exception("Customer not found");
             return new CustomerPayload
             {
                 Id = customer.CustomerId,
