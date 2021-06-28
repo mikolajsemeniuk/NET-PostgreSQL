@@ -38,7 +38,7 @@ namespace app.Services
             var customer = await _context.Customers.FindAsync(id);
             
             if (customer == null)
-                throw new Exception("something gone wrong please try again later");
+                throw new Exception("Customer not found");
             
             return new CustomerPayload
             {
