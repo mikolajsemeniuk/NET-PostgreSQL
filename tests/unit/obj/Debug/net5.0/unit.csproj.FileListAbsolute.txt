@@ -122,3 +122,7 @@
 /Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/obj/Debug/net5.0/unit.genruntimeconfig.cache
 /Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/EntityFrameworkCoreMock.Moq.dll
 /Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/EntityFrameworkCoreMock.Shared.dll
+/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/FakeItEasy.dll
+/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/MockQueryable.Core.dll
+/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/MockQueryable.EntityFrameworkCore.dll
+/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/bin/Debug/net5.0/MockQueryable.FakeItEasy.dll

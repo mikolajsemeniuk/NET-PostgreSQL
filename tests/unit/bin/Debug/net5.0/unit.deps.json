@@ -9,7 +9,9 @@
       "unit/1.0.0": {
         "dependencies": {
           "EntityFrameworkCoreMock.Moq": "2.2.0",
+          "FakeItEasy": "7.1.0",
           "Microsoft.NET.Test.Sdk": "16.7.1",
+          "MockQueryable.FakeItEasy": "5.0.1",
           "Moq": "4.16.1",
           "app": "1.0.0",
           "coverlet.collector": "1.3.0",
@@ -63,6 +65,17 @@
           "lib/net5.0/EntityFrameworkCoreMock.Shared.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "FakeItEasy/7.1.0": {
+        "dependencies": {
+          "Castle.Core": "4.4.1"
+        },
+        "runtime": {
+          "lib/net5.0/FakeItEasy.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.1.0.0"
           }
         }
       },
@@ -501,6 +514,38 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "MockQueryable.Core/5.0.1": {
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.Core.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
+      "MockQueryable.EntityFrameworkCore/5.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "MockQueryable.Core": "5.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.EntityFrameworkCore.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
+      "MockQueryable.FakeItEasy/5.0.1": {
+        "dependencies": {
+          "FakeItEasy": "7.1.0",
+          "MockQueryable.EntityFrameworkCore": "5.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.FakeItEasy.dll": {
+            "assemblyVersion": "5.0.0.1",
+            "fileVersion": "5.0.0.1"
+          }
         }
       },
       "Moq/4.16.1": {
@@ -1470,6 +1515,13 @@
       "path": "entityframeworkcoremock.shared/2.2.0",
       "hashPath": "entityframeworkcoremock.shared.2.2.0.nupkg.sha512"
     },
+    "FakeItEasy/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xn2KC8v1mNpYtN0qiEIuvWnFY7MPzx3INf//+BvJ+banzVSpyGdc58cuQMLOQjNlALHNDTcnuOuJrGtOcN1Gwg==",
+      "path": "fakeiteasy/7.1.0",
+      "hashPath": "fakeiteasy.7.1.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1679,6 +1731,27 @@
       "sha512": "sha512-9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
+    "MockQueryable.Core/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l8+aU1yAl9Dmep0geZR2PCu7UWNwo6kKFaeuigDSimOTSd7U8ScHSAbNT1pLusUrkU2p6lwb28dJ+3wfbv2F3A==",
+      "path": "mockqueryable.core/5.0.1",
+      "hashPath": "mockqueryable.core.5.0.1.nupkg.sha512"
+    },
+    "MockQueryable.EntityFrameworkCore/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LaS2NMn12kJO/tMLC3MHoGMw8JwLayjMPHHkO0oVDA1kZxF/cJ5+0zLXGN3j9pyA/3p0yHUrVya3JJFqF+16wQ==",
+      "path": "mockqueryable.entityframeworkcore/5.0.1",
+      "hashPath": "mockqueryable.entityframeworkcore.5.0.1.nupkg.sha512"
+    },
+    "MockQueryable.FakeItEasy/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p/QjltBXoaHtTYfZazx73JOZGa/g+mTw6rYE33oXwAztWOyeqPKnL07Iy7BG/sTKElSKBA5h+Bi/e4LvLl8JrA==",
+      "path": "mockqueryable.fakeiteasy/5.0.1",
+      "hashPath": "mockqueryable.fakeiteasy.5.0.1.nupkg.sha512"
     },
     "Moq/4.16.1": {
       "type": "package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4ondT55cnvjEjQDcCDPP6h3Nl6XoOhhB+JDo0PzuK2qGTno3COrMTYJNZyEcFIo1vmespOWc4TZlLYa5yMsc0g==",
+  "dgSpecHash": "mcJ+Up7nU2pDbhDO/wBcVcC9S9UvLYvF9zE+A7Z5ZJyCQA8rtcb7fUlxD61r93vlDcXG8Z84FPSeMtLg0nNG3g==",
   "success": true,
   "projectFilePath": "/Users/mikolajsemeniuk/Projects/C#/NET-PostgreSQL/tests/unit/unit.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,9 @@
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.testplatform.objectmodel/16.7.1/microsoft.testplatform.objectmodel.16.7.1.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.testplatform.testhost/16.7.1/microsoft.testplatform.testhost.16.7.1.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "/Users/mikolajsemeniuk/.nuget/packages/mockqueryable.core/5.0.1/mockqueryable.core.5.0.1.nupkg.sha512",
+    "/Users/mikolajsemeniuk/.nuget/packages/mockqueryable.entityframeworkcore/5.0.1/mockqueryable.entityframeworkcore.5.0.1.nupkg.sha512",
+    "/Users/mikolajsemeniuk/.nuget/packages/mockqueryable.fakeiteasy/5.0.1/mockqueryable.fakeiteasy.5.0.1.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/moq/4.16.1/moq.4.16.1.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/mikolajsemeniuk/.nuget/packages/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg.sha512",

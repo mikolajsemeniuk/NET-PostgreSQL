@@ -1,19 +1,51 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using app.Data;
-using app.Inputs;
-using app.Models;
-using app.Payloads;
-using app.Services;
-using EntityFrameworkCoreMock;
-using Microsoft.EntityFrameworkCore;
 using Moq;
+using app.Models;
+using app.Services;
+// using FakeItEasy;
+using Microsoft.EntityFrameworkCore;
+using MockQueryable.FakeItEasy;
 using Xunit;
+using System.Threading.Tasks;
+using app.Inputs;
+using EntityFrameworkCoreMock;
+using app.Payloads;
+using System.Threading;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace unit
 {
+    // public class CustomerServiceTest
+    // {
+    //     [Fact]
+    //     public async Task CheckAsync()
+    //     {
+    //         // var users = new List<Customer>()
+    //         // {
+    //         //     new Customer { Name = "ExistLastName", FullName = "hehs", BirthDate = DateTime.Parse("01/20/2012")},
+    //         // };
+
+    //         // var fakeContext = A.Fake<DataContext>();
+    //         // var fakeDbSet = A.Fake<DbSet<Customer>>();
+    //         // A.CallTo(() => fakeContext.Customers).Returns(fakeDbSet);
+    //         // A.CallTo(() => fakeDbSet.Add(A<Customer>.Ignored)).Returns(users);
+    //         // var _repository = new 
+
+    //         var mockSet = new Mock<DbSet<Customer>>();
+
+    //         var mockContext = new Mock<DataContext>();
+    //         mockContext.Setup(m => m.Customers).Returns(mockSet.Object);
+
+    //         var service = new CustomerRepository(mockContext.Object);
+    //         await service.AddCustomerAsync(new CustomerInput { Name = "zcx", FullName = "das", BirthDate = DateTime.Now });
+
+    //         mockSet.Verify(m => m.Add(It.IsAny<Customer>()), Times.Once());
+    //         mockContext.Verify(m => m.SaveChanges(), Times.Once());
+    //     }
+    // }
     public class CustomerRepositoryTest
     {
         private DbContextOptions<DataContext> DummyOptions { get; } =
@@ -98,12 +130,5 @@ namespace unit
             // Assert
             _context.Verify(x => x.SaveChangesAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
-
-        [Fact]
-        public async Task AddCustomerAsync_ShouldReturnCustomer()
-        {
-            
-        }
     }
 }
-

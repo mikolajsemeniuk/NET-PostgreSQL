@@ -638,6 +638,41 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "MockQueryable.Core/5.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MockQueryable.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.Core.dll": {}
+        }
+      },
+      "MockQueryable.EntityFrameworkCore/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "MockQueryable.Core": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MockQueryable.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.EntityFrameworkCore.dll": {}
+        }
+      },
+      "MockQueryable.FakeItEasy/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "FakeItEasy": "5.1.1",
+          "MockQueryable.EntityFrameworkCore": "5.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/MockQueryable.FakeItEasy.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MockQueryable.FakeItEasy.dll": {}
+        }
+      },
       "Moq/4.16.1": {
         "type": "package",
         "dependencies": {
@@ -3140,6 +3175,48 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "MockQueryable.Core/5.0.1": {
+      "sha512": "l8+aU1yAl9Dmep0geZR2PCu7UWNwo6kKFaeuigDSimOTSd7U8ScHSAbNT1pLusUrkU2p6lwb28dJ+3wfbv2F3A==",
+      "type": "package",
+      "path": "mockqueryable.core/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.1/MockQueryable.Core.dll",
+        "logo.png",
+        "mockqueryable.core.5.0.1.nupkg.sha512",
+        "mockqueryable.core.nuspec"
+      ]
+    },
+    "MockQueryable.EntityFrameworkCore/5.0.1": {
+      "sha512": "LaS2NMn12kJO/tMLC3MHoGMw8JwLayjMPHHkO0oVDA1kZxF/cJ5+0zLXGN3j9pyA/3p0yHUrVya3JJFqF+16wQ==",
+      "type": "package",
+      "path": "mockqueryable.entityframeworkcore/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.1/MockQueryable.EntityFrameworkCore.dll",
+        "logo.png",
+        "mockqueryable.entityframeworkcore.5.0.1.nupkg.sha512",
+        "mockqueryable.entityframeworkcore.nuspec"
+      ]
+    },
+    "MockQueryable.FakeItEasy/5.0.1": {
+      "sha512": "p/QjltBXoaHtTYfZazx73JOZGa/g+mTw6rYE33oXwAztWOyeqPKnL07Iy7BG/sTKElSKBA5h+Bi/e4LvLl8JrA==",
+      "type": "package",
+      "path": "mockqueryable.fakeiteasy/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.1/MockQueryable.FakeItEasy.dll",
+        "logo.png",
+        "mockqueryable.fakeiteasy.5.0.1.nupkg.sha512",
+        "mockqueryable.fakeiteasy.nuspec"
       ]
     },
     "Moq/4.16.1": {
@@ -7320,6 +7397,7 @@
       "EntityFrameworkCoreMock.Moq >= 2.2.0",
       "FakeItEasy >= 7.1.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
+      "MockQueryable.FakeItEasy >= 5.0.1",
       "Moq >= 4.16.1",
       "app >= 1.0.0",
       "coverlet.collector >= 1.3.0",
@@ -7379,6 +7457,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.7.1, )"
+          },
+          "MockQueryable.FakeItEasy": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           },
           "Moq": {
             "target": "Package",
